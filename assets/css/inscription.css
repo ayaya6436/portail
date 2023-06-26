@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    justify-content: center;
+    
+   
+}
+
+.content1{
+    background-color: #fffaee;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.content1 span{
+    margin-top: 20%;
+    color: #ffb100;
+    font-weight: bold;
+}
+
+.content2{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-top: 5%;
+
+
+}
+
+.content2 h1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.formulaire{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.row1{
+    display: flex;
+    flex-direction: column;
+}
