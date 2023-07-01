@@ -44,7 +44,7 @@
             </div>
 
             <div class="content3">
-                <button class="btn2">Inscription</button>
+                <button class="btn2"><a href="http://localhost/portail/views/inscription.php" style="color:#fff;">Inscription</a></button>
                 <button class="btn3">Formations</button>
             </div>
 
