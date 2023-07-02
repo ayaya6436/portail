@@ -11,6 +11,7 @@ if (isset($_GET['id'])) {
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
     a{
         color: black;
@@ -42,6 +43,12 @@ h1{
   background-color: #ffb100;
   color: white;
 }
+button {
+  background-color: orange;
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -51,7 +58,7 @@ h1{
   $donnees = $req->fetchAll(PDO::FETCH_ASSOC);
   
 ?>
-
+<button><a href="inscription.php">+ ajouter</a></button>
 <table id="liste">
 
   <tr>
@@ -88,8 +95,8 @@ while ($row = $req->fetch()) {
     echo "<td>".$row['nom']."</td>";
     echo "<td>".$row['promotionAnnee']."</td>";
     echo '<td>
-            <a href="inscription.php?id=' .$row['id']. '">Editer</a>
-            <a href="liste.php?id=' .$row['id']. '">Supprimer</a>
+            <a href="inscription.php?id=' .$row['id']. '"><i class="fa-solid fa-pen-to-square"></i></a>
+            <a href="liste.php?id=' .$row['id']. '"><i class="fa-sharp fa-solid fa-trash"></i></a>
         </td>';
     $i++;
     echo "</tr>";

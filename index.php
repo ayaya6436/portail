@@ -21,11 +21,8 @@
             </div>
 
             <div class="connect">
-                <!-- <div class="search">
-                    <input type="search">
-                </div> -->
                 <div class="btn-connect">
-                    <button class="btn1">Connexion</button>
+                    <a href="logoutAction.php" class="btn1">Deconnexion</a>
                 </div>
             </div>
         </div>

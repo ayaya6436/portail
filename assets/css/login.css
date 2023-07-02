@@ -46,6 +46,9 @@ line-height: normal;
     
     
 }
+body{
+    background-color: #fffaee;
+}
 
 label{
     margin: 5px;
