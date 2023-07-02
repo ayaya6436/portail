@@ -1,5 +1,13 @@
+<?php require '../config/dbConnect.php';  
+// SUPPRESSION
+if (isset($_GET['id'])) {
+  $db->query('DELETE FROM apprenant WHERE id=' . $_GET['id']);
+  header('Location:liste.php');
+}
 
-<?php require '../config/dbConnect.php';  ?>
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +45,7 @@ h1{
 </style>
 </head>
 <body>
-<h1>Liste des apprenant</h1>
+<h1>Liste des apprenants</h1>
 <?php
   $req = $db->query("SELECT * FROM apprenant");
   $donnees = $req->fetchAll(PDO::FETCH_ASSOC);
@@ -81,7 +89,7 @@ while ($row = $req->fetch()) {
     echo "<td>".$row['promotionAnnee']."</td>";
     echo '<td>
             <a href="inscription.php?id=' .$row['id']. '">Editer</a>
-            <a href="liste.php?ids=' .$row['id']. '">Supprimer</a>
+            <a href="liste.php?id=' .$row['id']. '">Supprimer</a>
         </td>';
     $i++;
     echo "</tr>";

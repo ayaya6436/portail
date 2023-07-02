@@ -1,3 +1,5 @@
+<?php require 'actions/security.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

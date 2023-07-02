@@ -1,6 +1,6 @@
 <?php 
 require '../config/dbConnect.php';
-
+//enrgistrement apprenant
 if (isset($_POST["enregistrer"])) {
 
     
