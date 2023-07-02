@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+   
+    
+}
+.content1{
+    margin-top: 18%;
+    margin-right: 2%;
+
+
+  
+   
+}
+
+.title{
+    
+    display: flex;
+width: 480px;
+flex-direction: column;
+flex-shrink: 0;
+color: #F9A826;
+text-align: center;
+font-size: 36px;
+font-family: Inter;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70%;
+    margin-right: 30;
+    flex-shrink: 0;
+    border-radius: 13px;
+    border: 1px solid #000;
+    background: #FFF;
+    
+    
+    
+}
+
+label{
+    margin: 5px;
+}
+
+
+input,select{
+    width: 300px;
+    height: 30px;
+    flex-shrink: 0; 
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    margin: 5px;
+   
+}
+
+
+
+.row1 div{
+    margin-right: 20%;
+}
+.row-colunm{
+    display: flex;
+    flex-direction: column;
+}
+
+ .row3{
+    margin-top: 5%;
+    margin-right: 5%;
+    width: 200px;
+    height: 25.887px;
+    flex-shrink: 0;    
+
+
+  
+} 
+.btn{
+color: #FFF;
+text-align: center;
+font-size: 15px;
+font-family: Inter;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+background-color: #FFB100;
+border: 1px solid #FFB100;
+border-radius: 5px;
+
+
+}
+
+
+
+
+
+

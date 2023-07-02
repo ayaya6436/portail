@@ -61,7 +61,10 @@
         }
         // Si toutes les validations sont réussies, soumettre le formulaire
         alert("Formulaire soumis avec succès !");
-        return true;
+        
+       
+        //redirection
+        window.location.href = "/views/liste.php";
     }
 
     

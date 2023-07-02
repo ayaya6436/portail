@@ -11,11 +11,7 @@
 <body>
     <div class="container">
 
-            <?php 
-                if(isset($errorMsg)){
-                    echo "<div > $errorMsg </div>";
-                }
-            ?> 
+          
                 <div class="content1">
                     <div class="title"><span>ORANGE DIGITAL CENTER</span></div>
 
@@ -90,16 +86,10 @@
                 </div>
                 
             </form>
-            
-
-            
-            
-
-            
       
     </div>
 
     
-    <script src="../assets/js/script.js"></script> 
+    <!-- <script src="../assets/js/script.js"></script>  -->
 </body>
 </html>
