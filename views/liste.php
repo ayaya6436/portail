@@ -64,30 +64,30 @@ h1{
   <tr>
 
   <?php
-                $req = $db->query("select * from apprenant");
-                $i =1;
-                while ($row =$req->fetch()) {
-                   echo "<tr>";
-                    echo "<th>".$i."</th>";
-                    echo "<td>".$row['matricule']."</td>";
-                    echo "<td>".$row['nom']."</td>";
-                    echo "<td>".$row['prenom']."</td>";
-                    echo "<td>".$row['age']."</td>";
-                    echo "<td>".$row['dateNaissance']."</td>";
-                    echo "<td>".$row['email']."</td>";
-                    echo "<td>".$row['telephone']."</td>";
-                    echo "<td><img src='../assets/images/".$row['photo']."' alt='Photo' width='100'></td>";
-                    echo "<td>".$row['promotionId']."</td>";
-                    echo "<td>".$row['promotionAnnee']."</td>";
-                    echo '<td>
-                            <a href="inscription.php?id=' .$row['id']. '">Editer</a>
-                            <a href="liste.php?ids=' .$row['id']. '">Supprimer</a>
-                        </td>';
-                        $i++;
-                echo"</tr>";
-                }
-           
-            ?>
+    $req = $db->query("SELECT * FROM apprenant JOIN promotion ON apprenant.promotionId = promotion.id");
+$i = 1;
+while ($row = $req->fetch()) {
+    echo "<tr>";
+    echo "<th>".$i."</th>";
+    echo "<td>".$row['matricule']."</td>";
+    echo "<td>".$row['nom']."</td>";
+    echo "<td>".$row['prenom']."</td>";
+    echo "<td>".$row['age']."</td>";
+    echo "<td>".$row['dateNaissance']."</td>";
+    echo "<td>".$row['email']."</td>";
+    echo "<td>".$row['telephone']."</td>";
+    echo "<td><img src='../assets/images/usersphoto" . $row['photo'] . "' alt='Photo' width='100'></td>";
+    echo "<td>".$row['nom']."</td>";
+    echo "<td>".$row['promotionAnnee']."</td>";
+    echo '<td>
+            <a href="inscription.php?id=' .$row['id']. '">Editer</a>
+            <a href="liste.php?ids=' .$row['id']. '">Supprimer</a>
+        </td>';
+    $i++;
+    echo "</tr>";
+}
+?>
+
 
 </table>
 
