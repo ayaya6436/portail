@@ -1,3 +1,5 @@
+<!-- ajout de la partie traitement login du formulaire inscription -->
+
 <?php require '../actions/inscriptionAction.php';?>
 
 <!DOCTYPE html>
@@ -67,7 +69,7 @@
                         <div class="row-colunm">
                             <label>Promotion</label>
                             <select name="promotionId" type="text" id="promotionId">
-                                <!-- <option value="ODK3">ODK3</option> -->
+                        <!-- recuperation des noms de promotions par leur id -->
                                 <option value="2">ODK2</option>
                                 <option value="1">ODK1</option>
                             </select>

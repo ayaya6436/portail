@@ -1,5 +1,7 @@
+<!-- ajout de dbConnect -->
+
 <?php require '../config/dbConnect.php';  
-// SUPPRESSION
+// SUPPRESSION apprenant
 if (isset($_GET['id'])) {
   $db->query('DELETE FROM apprenant WHERE id=' . $_GET['id']);
   header('Location:liste.php');
@@ -53,6 +55,7 @@ button {
 </head>
 <body>
 <h1>Liste des apprenants</h1>
+<!-- requete pour afficher l'ensemble des apprenants -->
 <?php
   $req = $db->query("SELECT * FROM apprenant");
   $donnees = $req->fetchAll(PDO::FETCH_ASSOC);
@@ -77,6 +80,7 @@ button {
     <th>Actions</th>
   </tr>
   <tr>
+<!-- requete avec jointure pour afficher l'ensemble des apprenants avec le nom de la promotion dans un tableau -->
 
   <?php
     $req = $db->query("SELECT * FROM apprenant JOIN promotion ON apprenant.promotionId = promotion.id");

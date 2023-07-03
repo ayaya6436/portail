@@ -1,3 +1,4 @@
+<!-- ajout de la partie traitement securite -->
 <?php require 'actions/security.php';?>
 
 <!DOCTYPE html>

@@ -1,3 +1,5 @@
+<!-- ajout de la partie traitement login du formulaire de connexion -->
+
 <?php require "./actions/loginAction.php";?>
 <!DOCTYPE html>
 <html lang="en">
